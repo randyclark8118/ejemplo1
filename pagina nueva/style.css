@@ -1,0 +1,113 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fad0c4);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Fondo animado */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Header */
+header {
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Secciones */
+.seccion {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.seccion p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  font-size: 1.1rem;
+}
+
+/* Botones */
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37,117,252,0.5);
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
